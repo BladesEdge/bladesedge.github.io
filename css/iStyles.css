@@ -1,0 +1,1793 @@
+/*
+===========================================
+iDesigner - Elegant Creative Portfolio
+Author: QleenTreat  Team
+Version : 2.0 (2nd Update)
+File Name : main.css
+===========================================
+*/
+/*-----------------------------------------
+===========================================
+	Table Of Context
+===========================================
+
+	1. Banner Styles
+		1.1 Banner Text Styles
+		1.2 Banner Slider Styles
+		1.3 Banner Video Styles
+		1.4 Banner Image Styles
+
+	2. Profile Section
+		2.1 Profile Image
+		2.2 Progress Bars
+		2.3 Profile Info
+			2.3.1 Profile Intro
+		2.4 Border (Demo 3)
+		2.5 Stats Section
+
+	3. About Section
+
+	4. Work Section
+		4.1 Work Type-1
+		4.2 Work Type-2
+
+	5. Divider Section
+		5.1 Divider Type-1
+		5.2 Divider Type-2
+		5.3 Divider Type-3
+
+	6. Services Section
+		6.1 Service Type-1
+		6.2 Service Type-2
+
+	7. Features Section
+
+	8. Blockquote Section
+
+	9. Blog  Section
+		9.1 Blog Post Type-1
+		9.2 Blog Post Type-2
+		9.3 Blog Post Type-3
+
+	10. Brand  Section
+
+	11. Team  Section
+
+	12. Blog Post Styles
+		12.1 Main Blog
+			12.1.1 Blog Post Image Styles
+			12.1.2 Blog Post Slider Styles
+			12.1.3 Blog Post Video Styles
+		12.2 Comment Section
+		12.3 Leave Comment Section
+		12.4 Sidebar Section
+			12.4.1 Search bar
+			12.4.2 Categories Section
+			12.4.3 Flickr Section
+			12.4.4 Popular Post Section
+			12.4.5 Tags Section
+
+	13. Blog Page  Styles
+		13.1 Single Column
+		13.2 Two Column
+		13.3 Three Column
+		13.4 Four Column
+		13.5 No Sidebar
+
+	14. Portfolio Post Styles
+		14.1 Full width simple
+		14.2 Full width Extended
+		14.3 Multiple Images
+
+	15. Portfolio Page Styles
+
+-------------------------------------------*/
+/*-----------------------------------------------------------------
+=============================================
+	1. Banner Styles
+=============================================
+-----------------------------------------------------------------*/
+.banner {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
+/*===========================================
+	1.1 Banner Text Styles
+===========================================*/
+.banner-text {
+  margin-top: 17%;
+  margin-left: 25%;
+  width: 50%;
+  border: 7px solid #121720;
+  padding: 2em;
+  color: #121720;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+.banner-text h1.hero,
+.banner-text p.tag-line {
+  color: inherit;
+  font-family: inherit;
+  background-color: #fff;
+  width: 150%;
+  margin: 0;
+  margin-left: -25%;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 700;
+}
+h1.hero {
+  font-size: 8.5em;
+  line-height: 0.8em;
+}
+p.tag-line {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 600;
+}
+/*===========================================
+	1.2 Banner Slider Styles
+===========================================*/
+h2.banner-heading {
+  font-size: 5em;
+  line-height: 1em;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 700;
+}
+/*===========================================
+	1.3 Banner Video Styles
+===========================================*/
+.banner.video .video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.banner.video .video-content {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 43%;
+}
+/*===========================================
+	1.4 Banner Image Styles
+===========================================*/
+.banner.image {
+  height: 40em;
+}
+.banner-image {
+  background: url("../img/profile-bg.jpg") no-repeat top center fixed;
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+}
+/*-----------------------------------------------------------------
+=============================================
+	2. Profile Section
+=============================================
+-----------------------------------------------------------------*/
+.profile-container {
+  width: 70%;
+  margin-left: 30%;
+  padding-right: 10%;
+}
+.profile-intro {
+  margin: 2em 0;
+  overflow: hidden;
+}
+.profile-intro p {
+  margin: 2em 0;
+}
+/*===========================================
+	2.1 Profile Image
+===========================================*/
+.profile.type-2 {
+  text-align: center;
+  padding-bottom: 3em;
+}
+.profile.type-2 #profile-image {
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.profile.type-2 .iam {
+  color: #454c58;
+}
+/*===========================================
+	2.2 Progress Bars
+===========================================*/
+.progress-bar {
+  margin-top: 3em;
+}
+.bars {
+  margin-top: 1.5em;
+  overflow: hidden;
+}
+.bar-title {
+  font-size: 0.9em;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 2em 0 1.5em;
+}
+.bar1,
+.bar2,
+.bar3,
+.bar4 {
+  height: 0.9em;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 10px;
+}
+.bar1::before,
+.bar2::before,
+.bar3::before,
+.bar4::before {
+  height: 100%;
+  background-color: #007da6;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+span.percent {
+  width: 3.3em;
+  height: 3em;
+  text-align: center;
+  padding-top: 1.5%;
+  border: 2px solid #007da6;
+  color: #007da6;
+  position: absolute;
+  top: -80%;
+  font-size: 0.7em;
+  background-color: #fff;
+}
+.bar1::before {
+  width: 90%;
+}
+.bar1 span.percent {
+  left: 90%;
+}
+.bar2::before {
+  width: 75%;
+}
+.bar2 span.percent {
+  left: 75%;
+}
+.bar3::before {
+  width: 62%;
+}
+.bar3 span.percent {
+  left: 62%;
+}
+.bar4::before {
+  width: 84%;
+}
+.bar4 span.percent {
+  left: 84%;
+}
+
+/*-----------------------------------------------------------------
+	2.3.1 Profile Intro
+-----------------------------------------------------------------*/
+
+.profile-info {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.profile-intro#type-2 {
+  width: 55%;
+  margin: 0 auto;
+  border: 1px solid #a1a8b4;
+  color: #fff;
+  padding: 6em 3.5em;
+}
+
+.spacing-in {
+  padding-top: 17em;
+  padding-bottom: 17em;
+}
+
+.profile-intro#type-2 .heading {
+  font-size: 2.7em;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #a7a7a7;
+}
+.profile-intro#type-2 p {
+  line-height: 3em;
+  margin-top: 3.5em;
+}
+/*===========================================
+	2.4 Border (Demo 3)
+===========================================*/
+body.demo-3 {
+  border: 2em solid #121720;
+  overflow-x: hidden;
+  background-color: #dfe1e6;
+}
+.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 2em solid #121720;
+  z-index: 10;
+}
+/*===========================================
+	2.5 Stats Section
+===========================================*/
+.stats {
+  height: 50em;
+}
+.stats .bg-image {
+  background: url("../img/profile-bg.jpg") no-repeat top center fixed;
+  width: inherit;
+  height: inherit;
+}
+.stats .color-overlay {
+  background-color: rgba(24,29,38,0.3);
+  width: 100%;
+  height: 100%;
+}
+.stat {
+  text-align: center;
+}
+.stat section {
+  display: inline-block;
+  padding: 0.5em;
+  width: 15em;
+  height: 10em;
+  background-color: rgba(18,23,32,0.4);
+  margin: 0 10px;
+}
+.stat h5 {
+  text-align: center;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 300;
+  color: #fff;
+}
+.stat h6 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/*-----------------------------------------------------------------
+=============================================
+	3. About Section
+=============================================
+-----------------------------------------------------------------*/
+.about {
+  margin-top: -10em;
+}
+.about .bg-image {
+  background: url("../img/profile-bg.jpg") no-repeat center center fixed;
+  position: relative;
+}
+.about .bg-image::before {
+  background-color: rgba(18,23,32,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+.about .inner-container {
+  padding: 6em;
+}
+.about-intro {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.about-name,
+.about-skills {
+  float: left;
+}
+.about-name {
+  width: 70%;
+  padding-top: 8em;
+}
+.about-name h2 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #a1a8b4;
+  font-size: 6em;
+  line-height: 1em;
+}
+.about-name .first {
+  font-weight: 500;
+}
+.about-name .last {
+  font-weight: 100;
+}
+.about-skills {
+  width: 30%;
+  background-color: rgba(18,23,32,0.7);
+  margin-top: -6em;
+  padding: 3em;
+}
+.about-skills h4.skill {
+  font-size: 3em;
+  font-weight: 300;
+  color: #a1a8b4;
+  padding: 0.4em 0;
+  letter-spacing: 2px;
+}
+.about-info {
+  margin-top: 6em;
+  margin-bottom: 8em;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.about-info p {
+  margin-top: 3.5em;
+  line-height: 3em;
+}
+/*-----------------------------------------------------------------
+=============================================
+	4. Work Section
+=============================================
+-----------------------------------------------------------------*/
+.company {
+  color: #fff;
+  margin-top: 5em;
+}
+.company:first-child {
+  margin-top: 0;
+}
+.company .role {
+  font-size: 0.875em;
+  margin: 0.9em 0 1.125em;
+}
+h4.name {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/*===========================================
+	4.1 Work Type-1
+===========================================*/
+.work-container#type-1 {
+  padding-left: 10%;
+  margin-right: 30%;
+  width: 70%;
+}
+/*===========================================
+	4.2 Work Type-2
+===========================================*/
+.work .bg-image {
+  background: url("../img/profile-bg.jpg") no-repeat center center fixed;
+  position: relative;
+  top: 0;
+}
+.work .bg-image:before {
+  content: '';
+  background-color: rgba(43,48,60,0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.work-container#type-2 {
+  position: relative;
+  top: 0;
+  width: 50%;
+  margin-left: 50%;
+  padding-right: 8%;
+}
+.work-container#type-2 h2.heading-box {
+  left: 0 !important;
+  margin-left: 0 !important;
+}
+/*-----------------------------------------------------------------
+=============================================
+	5. Divider Section
+=============================================
+-----------------------------------------------------------------*/
+/*===========================================
+	5.1 Divider Type-1
+===========================================*/
+.divider#type-1 {
+  background-color: #d4d7dd;
+}
+.divider#type-1 .box1 {
+  background-color: transparent;
+}
+.divider-image-side {
+  float: right;
+  width: 85%;
+  margin-right: -10%;
+}
+.divider-link {
+  padding: 0.5em 3.5em;
+  background-color: #282e39;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 1em;
+}
+.divider-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+/*===========================================
+	5.2 Divider Type-2
+===========================================*/
+.divider#type-2 {
+  text-align: center;
+  background-color: #d4d7dd;
+}
+.divider#type-2 .divider-info {
+  width: 100%;
+}
+.divider#type-2 .creative {
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 5em;
+}
+h3.divider-heading {
+  font-size: 2.875em;
+  color: #575d69;
+}
+.imac-photo {
+  position: relative;
+  height: 0;
+  padding-top: 30%;
+  overflow: hidden;
+}
+.imac-photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*===========================================
+	5.3 Divider Type-3
+===========================================*/
+.divider#type-3 .creative {
+  border: 0.3em solid #474c59;
+  text-align: center;
+  padding: 3em 0;
+}
+.divider#type-3 h3.divider-heading {
+  font-size: 3.2em;
+}
+/*-----------------------------------------------------------------
+=============================================
+	6. Services Section
+=============================================
+-----------------------------------------------------------------*/
+.services .bg-image#type-1 {
+  background: url("../img/profile-bg.jpg") no-repeat top center fixed;
+}
+.services .bg-image#type-2 {
+  background: url("../img/profile-bg.jpg") no-repeat top center fixed;
+}
+.services .bg-image#type-3 {
+  background: url("../img/profile-bg.jpg") no-repeat top center fixed;
+}
+.services-box {
+  background-color: rgba(18,23,32,0.95);
+}
+.services-heading {
+  background-color: rgba(255,255,255,0.85);
+}
+.services-container {
+  width: 60%;
+  float: right;
+}
+/*===========================================
+	6.1 Service Type-1
+===========================================*/
+.services#type-1 .service {
+  margin-top: 2em;
+}
+.services#type-1 .service:hover .service-icon {
+  background-color: #007da6;
+}
+.services#type-1 .service-info {
+  padding: 2em;
+  background-color: rgba(45,51,63,0.8);
+  color: #fff;
+}
+.services#type-1 .service-info p {
+  margin-top: 1em;
+}
+.services#type-1 .service-icon {
+  padding: 0 0.45em;
+  font-size: 2.2em;
+  background-color: #121720;
+  color: #fff;
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+  text-align: center;
+}
+/*===========================================
+	6.2 Service Type-2
+===========================================*/
+.services-start {
+  margin-top: 2em;
+}
+.services#type-2 .service {
+  margin-top: 3em;
+}
+.services#type-2 .service:hover .service-name {
+  background-color: #007da6;
+}
+.services#type-2 .service:hover .service-info {
+  background-color: #474c59;
+}
+.services#type-2 .service-name {
+  background-color: #242833;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  padding-left: 4em;
+  color: #fff;
+  width: 35%;
+}
+.services#type-2 .service-info {
+  padding: 3em;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  color: #fff;
+  background-color: #2b303c;
+}
+/*-----------------------------------------------------------------
+=============================================
+	7. Features Section
+=============================================
+-----------------------------------------------------------------*/
+.features {
+  background-color: #d4d7dd;
+}
+.features .row:last-child {
+  margin-top: 7em !important;
+}
+.feature {
+  color: #121720;
+  text-align: center;
+}
+.feature:hover .feature-icon {
+  background-color: #007da6;
+  border: 1px solid #007da6;
+  color: #fff;
+}
+.feature-icon {
+  width: 2.2em;
+  height: 2.2em;
+  line-height: 2.2em;
+  margin: 0 auto;
+  font-size: 2em;
+  border: 1px solid #121720;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.feature-info {
+  margin-top: 3em;
+}
+.feature-info .name {
+  margin-bottom: 0.875em;
+}
+/*-----------------------------------------------------------------
+=============================================
+	8. Blockquote Section
+=============================================
+-----------------------------------------------------------------*/
+blockquote {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4em 2em;
+  position: relative;
+  z-index: 10;
+}
+blockquote .quote {
+  font-size: 2.7em;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+blockquote .quote:first-child::before {
+  content: '\F10D';
+  font-size: 0.7em;
+  font-family: FontAwesome;
+  position: absolute;
+  top: -40%;
+  left: -6%;
+}
+blockquote .quote:last-child::after {
+  content: '\f10e';
+  font-size: 0.7em;
+  font-family: FontAwesome;
+  position: absolute;
+  top: -40%;
+  right: -6%;
+}
+blockquote.light {
+  border: 0.2em solid #fff;
+  color: #fff;
+}
+blockquote.dark {
+  border: 0.2em solid #2d333f;
+  background-color: #2d333f;
+  color: #fff;
+}
+.blockquote .bg-image#type-1 {
+  background: url("../img/profile-bg.jpg") no-repeat center center fixed;
+}
+.blockquote .bg-image#type-1::before {
+  background-color: rgba(18,23,32,0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+.blockquote .bg-image#type-2 {
+  background: url("../img/profile-bg.jpg") no-repeat center center fixed;
+}
+.blockquote .bg-image#type-2::before {
+  background-color: rgba(18,23,32,0.45);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+.blockquote .bg-image {
+  position: relative;
+  top: 0;
+  padding: 25em 0;
+}
+/*-----------------------------------------------------------------
+=============================================
+	9. Blog  Section
+=============================================
+-----------------------------------------------------------------*/
+.blog-start {
+  margin-top: 5em;
+}
+article.blog-post {
+  overflow: hidden;
+  margin-top: 3em;
+}
+.post-heading {
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.blog-post .post-image::before,
+.blog-post .post-info,
+.blog-post a.read-more,
+.blog-post .post-date {
+  -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+/*===========================================
+	9.1 Blog Post Type-1
+===========================================*/
+.blog-start#type-1 .post-image,
+.blog-start#type-1 .color-overlay {
+  padding: 0;
+  overflow: hidden;
+}
+.blog-start#type-1 .post-info,
+.blog-start#type-1 .post-date,
+.blog-start#type-1 .post-image img {
+  position: absolute;
+  color: #fff;
+}
+.blog-start#type-1 .post-image {
+  height: 0;
+  padding-top: 36%;
+}
+.blog-start#type-1 .post-image img {
+  top: 0;
+  -webkit-transition: all 10s ease;
+          transition: all 10s ease;
+}
+.blog-start#type-1 .post-image::before {
+  content: '';
+  background-color: rgba(18,23,32,0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.blog-start#type-1 .post-date {
+  padding: 0.875em 1.5em;
+  background-color: rgba(18,23,32,0.75);
+  top: 50%;
+  left: 0;
+  margin-top: -5%;
+  display: inline-block;
+  z-index: 2;
+}
+.blog-start#type-1 .day {
+  font-size: 3.5em;
+}
+.blog-start#type-1 .month {
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
+  padding-left: 0.4em;
+}
+.blog-start#type-1 .post-info {
+  background-color: #2d333f;
+  padding: 3em 2em 2.5em;
+  top: 13%;
+  left: 50%;
+  z-index: 2;
+  overflow: hidden;
+}
+.blog-start#type-1 .post-info p {
+  margin: 1em 0 3em;
+}
+a.read-more {
+  padding: 0.5em 1em;
+  border: 1px solid #fff;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  float: right;
+  color: #fff;
+}
+a.read-more:hover {
+  color: inherit;
+}
+.blog-start#type-1 .post-wrapper {
+  position: relative;
+  padding: 0 !important;
+}
+.blog-start#type-1 .post-wrapper:hover .post-image img {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.blog-start#type-1 .post-wrapper:hover .post-image::before {
+  background-color: rgba(18,23,32,0.8) !important;
+}
+.blog-start#type-1 .post-wrapper:hover .post-info {
+  background-color: #575d69 !important;
+}
+.blog-start#type-1 .post-wrapper:hover a.read-more {
+  background-color: #007da6;
+  border: 1px solid #007da6 !important;
+}
+/*===========================================
+	9.2 Blog Post Type-2
+===========================================*/
+.blog.type-2 {
+  background-color: #d4d7dd;
+}
+.blog-start#type-2 .blog-post {
+  margin-top: 0;
+}
+.blog-start#type-2 .blog-post a {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+}
+.blog-start#type-2 .blog-post .post-image {
+  position: absolute;
+  top: 0;
+}
+.blog-start#type-2 .blog-post .post-image img {
+  -webkit-transition: all 10s ease;
+          transition: all 10s ease;
+  margin-top: -10%;
+}
+.blog-start#type-2 .blog-post .post-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(18,23,32,0.55);
+  width: 100%;
+  height: 100%;
+}
+.blog-start#type-2 .blog-post .post-spacing {
+  padding: 5em 0;
+  position: relative;
+  z-index: 2;
+}
+.blog-start#type-2 .blog-post .post-info {
+  width: 60%;
+  border: 1px solid transparent;
+  padding: 3em 7em;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.blog-start#type-2 .blog-post .post-date {
+  margin: 0 auto;
+  padding: 0.6em 2.5em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(18,23,32,0.75);
+  display: inline-block;
+}
+.blog-start#type-2 .blog-post .post-date .date {
+  font-size: 1.1em;
+}
+.blog-start#type-2 .blog-post .post-title {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 1em 0 0.65em;
+}
+.blog-start#type-2 .blog-post:hover .post-image img {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.blog-start#type-2 .blog-post:hover .post-image::before {
+  background-color: rgba(18,23,32,0.75);
+}
+.blog-start#type-2 .blog-post:hover .post-date {
+  background-color: rgba(0,125,166,0.75);
+}
+.blog-start#type-2 .blog-post:hover .post-info {
+  border: 1px solid #a1a8b4;
+}
+/*===========================================
+	9.3 Blog Post Type-3
+===========================================*/
+.blog-start#type-3 .post-wrapper {
+  position: relative;
+  top: 0;
+}
+.blog-start#type-3 .post-image {
+  height: 0;
+  padding-top: 30%;
+  overflow: hidden;
+  position: relative;
+}
+.blog-start#type-3 .post-image img {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  -webkit-transition: all 10s ease;
+          transition: all 10s ease;
+}
+.blog-start#type-3 .post-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(18,23,32,0);
+  width: 100%;
+  height: 100%;
+}
+.blog-start#type-3 .post-info {
+  padding: 0.7em 2em 2em 2em;
+  background-color: rgba(19,23,32,0.9);
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 12.5%;
+  overflow: hidden;
+  z-index: 2;
+}
+.blog-start#type-3 .post-info p {
+  margin: 1em 0 3em;
+}
+.blog-start#type-3 .post-date {
+  margin-left: -2em;
+  background-color: #007da6;
+  width: 25%;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 0.3em 0 0.3em 2em;
+  margin-bottom: 1.25em;
+}
+.blog-start#type-3 .post-wrapper:hover .post-image img {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.blog-start#type-3 .post-wrapper:hover .post-image::before {
+  background-color: rgba(18,23,32,0.8);
+}
+.blog-start#type-3 .post-wrapper:hover .post-date {
+  background-color: #2d333f;
+}
+.blog-start#type-3 .post-wrapper:hover .read-more {
+  background-color: #2d333f;
+  border: 1px solid #2d333f;
+}
+.blog-start#type-3 .post-wrapper:hover .post-info {
+  background-color: rgba(87,93,105,0.85);
+}
+/*-----------------------------------------------------------------
+=============================================
+	10. Brand  Section
+=============================================
+-----------------------------------------------------------------*/
+.brands .row:last-child {
+  margin-top: 7em !important;
+}
+.brand {
+  width: 18.75%;
+  float: left;
+  margin-right: 8.333333333%;
+  padding: 1em;
+  border: 1px solid #fff;
+}
+.brand:nth-child(4n) {
+  margin-right: 0;
+}
+.brand:hover img {
+  opacity: 1;
+}
+.brand img {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+/*-----------------------------------------------------------------
+=============================================
+	11. Team  Section
+=============================================
+-----------------------------------------------------------------*/
+.team-start {
+  margin-top: 5em;
+}
+.team-member {
+  width: 25%;
+  float: left;
+}
+.team-member:hover .member-info,
+.team-member:hover .member-image::after {
+  opacity: 1;
+}
+.team-member:hover .social-bar {
+  background-color: #1c222e;
+}
+.member-image {
+  position: relative;
+  top: 0;
+}
+.member-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,125,166,0.65);
+  width: 100%;
+  height: 100%;
+}
+.member-info,
+.member-image::after {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.member-info {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.member-info .table {
+  width: 100%;
+  height: 100%;
+}
+.member-name {
+  margin: 0 auto;
+  width: 85%;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  padding: 0.5em 0;
+}
+.social-bar {
+  background-color: #232a38;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.social-links {
+  padding: 1.25em 0;
+  text-align: center;
+}
+.social-links a {
+  color: #a5acb7;
+  margin: 0 0.85em;
+  font-size: 1.25em;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.social-links a:hover {
+  color: #007da6;
+}
+/*-----------------------------------------------------------------
+=============================================
+	12. Blog Post Styles
+=============================================
+-----------------------------------------------------------------*/
+.blog-width,
+.portfolio-width {
+  width: 100%;
+}
+.blog-spacing {
+  padding-top: 6em;
+  padding-bottom: 30em;
+  width: 70%;
+  vertical-align: top;
+}
+/*===========================================
+	12.1 Main Blog
+===========================================*/
+.main-blog {
+  width: 75%;
+  margin-left: 25%;
+  padding-right: 4em;
+}
+.main-blog .post-info {
+  margin: 1.5em 0;
+}
+.main-blog .post-description {
+  margin-top: 4em;
+}
+.main-blog .post-description p {
+  color: #121720;
+  margin-top: 2em;
+}
+.main-blog .post-description p:first-child {
+  margin-top: 0;
+}
+.main-blog blockquote {
+  width: 100%;
+  margin-top: 4em;
+}
+.main-blog blockquote .quote {
+  font-size: 1.875em;
+  line-height: 2em;
+}
+.main-blog .col-sm-6 {
+  margin-top: 4em;
+}
+hr {
+  border-top: 1px solid #121720 !important;
+  margin: 5em 0 !important;
+}
+h3.blog-heading,
+.comment-heading,
+.commentor-name {
+  color: #121720;
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.blog-tags a,
+.social a {
+  background-color: #2d333f;
+  padding: 0.8em 1.5em;
+  font-size: 0.8em;
+  color: #fff;
+  margin-right: 0.6em;
+  display: inline-block;
+}
+.social a {
+  background-color: transparent;
+  font-size: 2.125em;
+  padding: 0;
+  color: #2d333f;
+  line-height: 0;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.social a:hover {
+  color: #575d69;
+}
+h2.post-title {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  color: #2d333f;
+  font-weight: 600;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+h4.post-date {
+  color: #4e505c;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 1.125em;
+}
+/*-----------------------------------------------------------------
+	12.1.1 Blog Post Image Styles
+-----------------------------------------------------------------*/
+.main-blog .post-image {
+  position: relative;
+  height: 0;
+  padding-top: 60%;
+  overflow: hidden;
+}
+.main-blog .post-image img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/*-----------------------------------------------------------------
+	12.1.2 Blog Post Slider Styles
+-----------------------------------------------------------------*/
+.post-slider {
+  position: relative;
+  height: 0;
+  padding-top: 60%;
+  overflow: hidden;
+}
+.post-slider .owl-carousel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#post-slider .owl-next,
+#post-slider .owl-prev {
+  height: 2.5em;
+  line-height: 2.5em;
+  width: 1.25em;
+  top: -webkit-calc(50% - 1.25em);
+  top: calc(50% - 1.25em);
+  right: 0;
+  background-color: rgba(0,125,166,0.5);
+}
+#post-slider .owl-prev {
+  left: 0;
+}
+/*-----------------------------------------------------------------
+	12.1.3 Blog Post Video Styles
+-----------------------------------------------------------------*/
+.post-video {
+  position: relative;
+  height: 0;
+  padding-top: 60%;
+  overflow: hidden;
+}
+.post-video iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/*===========================================
+	12.2 Comment Section
+===========================================*/
+.comment-heading {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.comment-start,
+.leave-comment {
+  margin-bottom: 7em;
+}
+.comment {
+  margin-top: 2em;
+}
+.comment-date {
+  font-size: 0.9em;
+  font-style: italic;
+}
+.commentor-name {
+  margin-bottom: 0;
+}
+.main-comment {
+  margin-top: 1em;
+}
+/*===========================================
+	12.3 Leave Comment Section
+===========================================*/
+.comment-form .name,
+.comment-form .email,
+.comment-form .message,
+.comment-form .website {
+  margin-top: 2em;
+}
+.comment-form input,
+.comment-form textarea {
+  border: none;
+  border-bottom: 1px solid #121720;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  outline: none;
+  color: #121720;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.comment-form input[type="email"] {
+  text-transform: none;
+}
+.comment-form .message {
+  margin-top: 3em;
+  position: relative;
+  height: 0;
+  padding-top: 25%;
+}
+.comment-form textarea {
+  border: 1px solid #121720;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  resize: none;
+}
+.comment-form button {
+  float: right;
+  margin-top: 4em;
+  padding: 1em 1.5em;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  color: #121720;
+  border: 1px solid #121720;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.comment-form button:hover {
+  background-color: #121720;
+  color: #fff;
+  border: 1px solid #121720;
+}
+/*===========================================
+	12.4 Sidebar Section
+===========================================*/
+.sidebar-start {
+  background-color: #2d333f;
+  vertical-align: top;
+}
+.sidebar {
+  width: 60%;
+  margin-left: 2em;
+  padding: 6em 0;
+}
+section {
+  margin-top: 3em;
+}
+.section-heading {
+  background-color: #242831;
+  font-size: 1.25em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 1em 0 1em 2em;
+  margin-left: -2em;
+  margin-bottom: 2em;
+}
+/*-----------------------------------------------------------------
+	12.4.1 Search bar
+-----------------------------------------------------------------*/
+.search-bar input,
+.search-bar button {
+  float: left;
+  background-color: #242831;
+  border: 1px solid #575d69;
+  color: #fff;
+  height: 2em;
+  outline: none;
+}
+.search-bar input {
+  padding: 1.5em;
+  font-size: 0.8em;
+  width: 80%;
+}
+.search-bar button {
+  width: 20%;
+  color: #7a8190;
+  font-size: 1.25em;
+}
+/*-----------------------------------------------------------------
+	12.4.2 Categories Section
+-----------------------------------------------------------------*/
+.category {
+  margin-left: -2em;
+}
+.category a {
+  display: block;
+  background-color: transparent;
+  border-bottom: 1px solid #575d69;
+  padding: 1.125em 0 1.125em 2em;
+  font-size: 0.875em;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+.category a:hover {
+  background-color: #242831;
+  border-bottom: 1px solid #242831;
+  color: #fff;
+}
+.category a:last-child {
+  border-bottom: 1px solid transparent;
+}
+/*-----------------------------------------------------------------
+	12.4.3 Flickr Section
+-----------------------------------------------------------------*/
+.flickr-stream ul {
+  overflow: hidden;
+}
+.flickr-stream ul li {
+  width: 31%;
+  float: left;
+  margin-top: 2.33%;
+  margin-left: 2.33%;
+  display: inline-block;
+}
+/*-----------------------------------------------------------------
+	12.4.4 Popular Post Section
+-----------------------------------------------------------------*/
+.popular-post {
+  margin-left: -2em;
+}
+.popular-post a {
+  display: block;
+  background-color: transparent;
+  border-bottom: 1px solid #575d69;
+  padding: 1.125em 0 1.125em 2em;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  font-weight: 600;
+}
+.popular-post a:hover {
+  background-color: #242831;
+  border-bottom: 1px solid #242831;
+  color: #fff;
+}
+.popular-post a:last-child {
+  border-bottom: 1px solid transparent;
+}
+.popular-post-title {
+  text-transform: uppercase;
+  font-size: 1.125em;
+  padding-bottom: 1em;
+  font-weight: inherit;
+}
+.popular-post-date {
+  font-weight: inherit;
+}
+/*-----------------------------------------------------------------
+	12.4.5 Tags Section
+-----------------------------------------------------------------*/
+.tags a {
+  background-color: transparent;
+  border: 1px solid #575d69;
+  padding: 0.8em 1.5em;
+  font-size: 0.8em;
+  color: #fff;
+  margin-right: 0.5em;
+  margin-top: 1em;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.tags a:hover {
+  color: #fff;
+  background-color: #242831;
+  border: 1px solid #242831;
+}
+/*-----------------------------------------------------------------
+=============================================
+	13. Blog Page  Styles
+=============================================
+-----------------------------------------------------------------*/
+.main-blog article {
+  margin-top: 4em;
+}
+.main-blog article:first-child {
+  margin-top: 0;
+}
+.main-blog article:hover .blog-post-image::before {
+  opacity: 1;
+}
+.main-blog article:hover .blog-post-image img {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.main-blog .blog-post-image {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.main-blog .blog-post-image img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 10s ease;
+          transition: all 10s ease;
+}
+.main-blog .blog-post-image::before {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(18,23,32,0.75);
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.main-blog .blog-post-date {
+  display: inline-block;
+  background-color: #121720;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125em;
+  padding: 0.5em 3em 0.5em 1em;
+  text-transform: uppercase;
+}
+.main-blog .blog-post-info {
+  margin-top: 1em;
+  overflow: hidden;
+}
+.main-blog .blog-post-info > * {
+  margin-top: 1em;
+}
+.main-blog .read-more {
+  border: 1px solid #121720;
+  color: #121720;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.main-blog .read-more:hover {
+  background-color: #007da6;
+  color: #fff;
+  border: 1px solid #007da6;
+}
+.main-blog .margin-no {
+  margin-top: 0;
+}
+/*===========================================
+	13.1 Single Column 
+===========================================*/
+#col1.blog-width .blog-post-image {
+  padding-top: 56.25%;
+}
+#col1.no-sidebar.blog-width .blog-post-image {
+  padding-top: 25%;
+}
+/*===========================================
+	13.2 Two Column 
+===========================================*/
+#col2.blog-width .blog-post-image {
+  padding-top: 60%;
+}
+#col2.blog-width .main-blog {
+  width: 85%;
+  margin-left: 15%;
+}
+/*===========================================
+	13.3 Three Column 
+===========================================*/
+#col3.blog-width .blog-post-image {
+  padding-top: 65%;
+}
+#col3.blog-width .main-blog {
+  width: 85%;
+  margin-left: 15%;
+}
+/*===========================================
+	13.4 Four Column 
+===========================================*/
+#col4.no-sidebar.blog-width .blog-post-image {
+  padding-top: 65%;
+}
+#col4.no-sidebar.blog-width .blog-spacing {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+/*===========================================
+	13.5 No Sidebar
+===========================================*/
+.no-sidebar .blog-spacing {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+.no-sidebar .main-blog {
+  width: 100% !important;
+  padding: 0;
+  margin: 0 !important;
+}
+/*-----------------------------------------------------------------
+=============================================
+	14. Portfolio Post Styles
+=============================================
+-----------------------------------------------------------------*/
+.portfolio-spacing {
+  margin: 10em 0;
+  width: 100%;
+}
+/*===========================================
+	14.1 Full width simple
+===========================================*/
+#full-width .main-portfolio {
+  width: 100%;
+}
+.main-portfolio .owl-prev,
+.main-portfolio .owl-next {
+  background-color: #575d69;
+  height: 2.75em;
+  line-height: 2.75em;
+  width: 1em;
+  top: -webkit-calc(50% - 2.75em);
+  top: calc(50% - 2.75em);
+  right: 0;
+}
+.main-portfolio .owl-prev {
+  left: 0;
+  margin-right: 0;
+}
+.main-portfolio figure {
+  width: 45%;
+  margin: 0 auto;
+}
+.main-portfolio figcaption {
+  width: 45%;
+  margin: 4em auto;
+  text-align: center;
+}
+.main-portfolio figcaption p {
+  margin-top: 1em;
+}
+/*===========================================
+	14.2 Full width Extended
+==========================================*/
+#full-width.extended .slides {
+  position: relative;
+  top: 0;
+  padding-top: 8em;
+  padding-bottom: 5em;
+}
+#full-width.extended .slides::before {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #121720;
+  content: '';
+  margin: 0 auto;
+}
+.compilation-start,
+.compilation-desc {
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 60%;
+}
+.compilation-title {
+  width: 60%;
+}
+.vl {
+  width: 1px;
+  background-color: #121720;
+}
+.share {
+  width: 40%;
+  padding-left: 5%;
+}
+.compilation-desc p {
+  margin-top: 2em;
+}
+.compilation-desc p:first-child {
+  margin-top: 0;
+}
+/*===========================================
+	14.3 Multiple Images
+==========================================*/
+#images .main-portfolio {
+  width: 60%;
+  margin: 0 auto;
+}
+#images .main-image {
+  width: 100%;
+  height: 0;
+  position: relative;
+  top: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+#images .main-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+#images .compilation-desc,
+#images .compilation-start {
+  width: 100%;
+}
+.multiple-images {
+  margin: 3em 0;
+}
+.multiple-images .large-image,
+.multiple-images .small-image {
+  float: left;
+  position: relative;
+  top: 0;
+  height: 0;
+  padding-top: 50%;
+  overflow: hidden;
+}
+.multiple-images .large-image img,
+.multiple-images .small-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+.multiple-images .large-image {
+  width: 32%;
+  margin-right: 1.3333333%;
+}
+.multiple-images .small-image {
+  width: 66.6666666%;
+  padding-top: 24.33333333%;
+  margin-bottom: 1.3333333%;
+}
+.multiple-images .small-image img {
+  width: 100%;
+  height: auto;
+}
+/*-----------------------------------------------------------------
+=============================================
+	15. Portfolio Page Styles
+=============================================
+-----------------------------------------------------------------*/
+#portfolio-page {
+  overflow: hidden;
+}

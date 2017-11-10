@@ -62,6 +62,56 @@ body{
 }
 
 
+/*================================================================ OUTSIDE THEMES ===================================================================*/
+
+
+
+.spacing-in {
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+
+.profile-intro#type-2 {
+    width: 55%;
+    margin: 0 auto;
+    border: 1px solid black;
+    color: black;
+    padding: 6em 3.5em;
+  }
+  
+  .profile-info .bg-image#type-2 {
+    background: url(../img/img2.jpg) no-repeat top center fixed;
+    background-size: cover;
+  }
+  
+  .profile-info .color-overlay {
+    background-color: rgba(255,255,255,0.9);
+    width: inherit;
+    height: inherit;
+  }
+  
+  .profile-intro#type-2 .heading {
+    font-size: 2.5em;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #a7a7a7;
+    font-family: 'Avenir', sans-serif;
+  }
+
+  .profile-intro#type-2 p {
+    line-height: 3em;
+    margin-top: 3.5em;
+}
+
+.profile-intro p {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Avenir', sans-serif;
+    font-size: 1em;
+    margin: 2em 0;
+}
+
 
 /*================================================================ PRELOAD ===================================================================*/
 
